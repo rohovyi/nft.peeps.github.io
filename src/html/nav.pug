@@ -1,0 +1,12 @@
+nav.__nav
+    .__nav-logo 
+        img.svg-logo-dims(src="@img/icons/icons.svg#logo" alt="logo")
+    .__nav-links
+        - var items = ['Collection', 'Content', 'Roadmap', 'Team']
+        - var links = ['collection', 'content', 'roadmap', 'team']
+            each item, key in items 
+                a.__nav-item(href=links[key] data-link=links[key] target='_blank')=item
+        a.__btn.__btn-pink(href='#') OpenSea
+    .__nav-collapse.__nav-menu_button
+        .__nav-menu_lines
+    .__nav_overlay

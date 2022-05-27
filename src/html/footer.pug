@@ -1,0 +1,19 @@
+footer
+    .container
+        h2 Follow us on
+        .__title
+            h4
+                span.__figure
+                span Navigation
+        ul.__social
+            -var items = ['Discord','Twitter','Instagram','Facebook']
+                each item in items
+                    li: a(href='#')=item
+        ul.__link 
+            -var items = ['Home','Style Guide','Licenses','Changelog']
+                each item in items
+                    li: a(href='#')=item
+        .__copy
+            span Powered by Webflow
+            span Made by Tim Poličar
+        img.svg-figure6-dims(src="@img/icons/icons_figure.svg#figure6" alt="figure6")

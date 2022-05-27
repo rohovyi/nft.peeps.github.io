@@ -1,0 +1,128 @@
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+    font-family       : $ff__main;
+    font-size         : 18px;
+    line-height       : 25px;
+    letter-spacing    : 0em;
+    text-align        : center;
+    color             : $color-text;
+    width             : $rate;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    font-family   : $ff__title-b;
+    color         : $color-text-b;
+    letter-spacing: 0em;
+    text-align    : center;
+    margin        : 0;
+}
+
+h1 {
+    font-size  : 97px;
+    line-height: 87px;
+}
+
+h2 {
+    font-size  : 65px;
+    line-height: 58px;
+}
+
+h3 {
+    font-size  : 36px;
+    line-height: 32px;
+}
+
+h4 {
+    font-family: $ff__main-b;
+    font-size  : 18px;
+    line-height: 25px;
+}
+
+h5 {
+    font-size  : 18px;
+    line-height: 16px;
+}
+
+.container {
+    width    : $rate;
+    max-width: 1080px;
+    margin   : 0 auto;
+}
+
+.help-block.with-errors {
+    color     : #ff5050;
+    margin-top: 5px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.__title {
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    -webkit-box-pack     : center;
+    -ms-flex-pack        : center;
+    justify-content      : center;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+
+    h4 {
+        display    : -webkit-box;
+        display    : -ms-flexbox;
+        display    : flex;
+        font-family: $ff__main-b;
+        font-size  : 18px;
+        line-height: 25px;
+
+        .__figure {
+            position: relative;
+
+            .svg-figure-dims {
+                position: absolute;
+                height  : 35.785213470458984px;
+                width   : 32.98917007446289px;
+            }
+        }
+    }
+
+    span {
+        z-index: 10;
+    }
+}
+
+.accordion {
+    background-color  : #eee;
+    color             : #444;
+    cursor            : pointer;
+    padding           : 18px;
+    width             : 100%;
+    text-align        : left;
+    border            : none;
+    outline           : none;
+    -webkit-transition: 0.4s;
+    -o-transition     : 0.4s;
+    transition        : 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding         : 0 18px;
+    background-color: white;
+    display         : none;
+    overflow        : hidden;
+}

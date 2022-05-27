@@ -1,0 +1,158 @@
+section.__collection
+    .container
+        .__title
+            h4
+                span.__figure
+                span Collection
+            h2 Meet Our Bored Peeps!
+        .__box 
+            .__box-item 
+                h5 6500 Bored Peeps
+                p Tempor interdum sed nisl aliquam ut orci feugiat neque. Nibh amet proin in tristique. Ipsum morbi adipiscing faucibus eu odio in tellus risus.
+            .__box-item
+                img.svg-human1-dims(src="@img/icons/icons_bust.svg#human1" alt="human1")
+                img.svg-human2-dims(src="@img/icons/icons_bust.svg#human2" alt="human2")
+                img.svg-human3-dims(src="@img/icons/icons_bust.svg#human3" alt="human3")
+            .__box-item
+                h5 Mint Price & Date
+                p Tempor interdum sed nisl aliquam ut orci feugiat neque. Nibh amet proin in tristique. Ipsum morbi adipiscing faucibus eu odio in tellus risus.
+            .__box-item
+                img.svg-human4-dims(src="@img/icons/icons_bust.svg#human4" alt="human4")
+                img.svg-human5-dims(src="@img/icons/icons_bust.svg#human5" alt="human5")
+                img.svg-human6-dims(src="@img/icons/icons_bust.svg#human6" alt="human6")
+            .__box-item
+                h5 Why Bored Peeps
+                p Tempor interdum sed nisl aliquam ut orci feugiat neque. Nibh amet proin in tristique. Ipsum morbi adipiscing faucibus eu odio in tellus risus.
+            .__box-item
+                img.svg-human7-dims(src="@img/icons/icons_bust.svg#human7" alt="human7")
+                img.svg-human8-dims(src="@img/icons/icons_bust.svg#human8" alt="human8")
+                img.svg-human9-dims(src="@img/icons/icons_bust.svg#human9" alt="human9")
+section.__rarity
+    .container
+        .__title
+            h4
+                span.__figure
+                span Rarity
+            h2 Exclusive Content
+        .__box 
+            -var items = ['Common','Uncommon','Rare','Very Rare','Legendary']
+            -var i = ['1','4','9','8','7']
+            -var k = ['0','1','2','3','4','5']
+                each item, key in items 
+                    .__box-item
+                        h3=item
+                        h5(id='box-h5-'+k[key]) Tier 1
+                        p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+                    .__box-item 
+                        img(class='svg-human'+i[key]+'-dims' src='@img/icons/icons_bust.svg#human'+i[key] alt='human'+i[key])
+section.__releases
+    .container 
+        .__title
+            h4
+                span.__figure
+                span Releases
+            h2 Our Roadmap
+        .__box 
+            .__box-item-0
+                .__box-data 
+                    .__box-rate
+                        span 0%
+                    h5 Q1 2022
+                    h3 Community DAO
+                    p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+                img.svg-figure6-dims(src="@img/icons/icons_figure.svg#figure6" alt="figure6")
+            .__box-item-1
+                .__box-data 
+                    .__box-rate
+                        span 20%
+                    h5 Q2 2022
+                    h3 Opening Event
+                    p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+                img.svg-standing-dims(src="@img/icons/icons_human.svg#standing" alt="standing")
+            .__box-item-2 
+                .__box-data 
+                    .__box-rate
+                        span 40%
+                    h5 Q3 2022
+                    h3 Charity Donation
+                    p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+            .__box-item-3
+                .__box-data 
+                    .__box-rate
+                        span 60%
+                    h5 Q4 2022
+                    h3 Rare Giveaways
+                    p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+                img.svg-figure5-dims(src="@img/icons/icons_figure.svg#figure5" alt="figure5")
+                img.svg-sitting-dims(src="@img/icons/icons_human.svg#sitting" alt="sitting")
+            .__box-item-4
+                .__box-data 
+                    .__box-rate
+                        span 80%
+                    h5 Q1 2023
+                    h3 New Nfts
+                    p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+            .__box-item-5 
+                .__box-data 
+                    .__box-rate
+                        span 100%
+                    h5 Q2 2023
+                    h3 Metaverse
+                    p Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.
+                img.svg-couple-dims(src="@img/icons/icons_human.svg#couple" alt="couple")
+section.__team
+    .container 
+        .__title
+            h4
+                span.__figure
+                span Team
+            h2 Meet Our Team
+        .__box 
+            -var items = ['Jennifer','Matthew','John','Justin','Jessica','Katty']
+            -var pos = ['CEO','Developer','Developer','Designer','Designer','Designer']
+            -var i = ['6','4','1','5','7','2']
+                each item, key in items 
+                    .__box-item 
+                        img.svg-shadow-dims(src="@img/icons/icons.svg#shadow" alt="shadow")
+                        img(class='svg-human'+i[key]+'-dims' src="@img/icons/icons_bust.svg#human"+i[key] alt="human"+i[key])
+                        h5=pos[key]
+                        h3=item
+section.__faq 
+    .container 
+        .__title
+            h4
+                span.__figure
+                span Faq
+            h2 Frequent Questions
+        .accordion-container
+            .ac 
+                h2.ac-header
+                    button(type="button" class="ac-trigger") Imperdiet et nunc, ipsum laoreet iaculis aliquet?
+                .ac-panel
+                    p.ac-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .ac 
+                h2.ac-header
+                    button(type="button" class="ac-trigger") Mi fringilla sit felis tristique varius tempus?
+                .ac-panel
+                    p.ac-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .ac 
+                h2.ac-header
+                    button(type="button" class="ac-trigger") Faucibus nec dictum pellentesque arcu ultrices ultricies?
+                .ac-panel
+                    p.ac-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .ac 
+                h2.ac-header
+                    button(type="button" class="ac-trigger") Morbi eget tristique porttitor turpis placerat tristique?
+                .ac-panel
+                    p.ac-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .ac 
+                h2.ac-header
+                    button(type="button" class="ac-trigger") Dolor turpis at turpis senectus convallis nunc pellentesque?
+                .ac-panel
+                    p.ac-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .ac 
+                h2.ac-header
+                    button(type="button" class="ac-trigger") Amet, viverra tellus ultricies non eros faucibus hendrerit?
+                .ac-panel
+                    p.ac-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        img.svg-figure5-dims(src="@img/icons/icons_figure.svg#figure5" alt="figure5")
